@@ -1,0 +1,17 @@
+
+#include<stdlib.h>
+int main(){
+  int a=10;
+  int *ptr_stack = &a;
+ int *ptr_malloc= (int*)malloc(1*sizeof(int)); 
+ printf("before freeing memory %p\n",ptr_malloc);
+ char *ptr_calloc=(char*)calloc(5,sizeof(char));
+char *ptr_realloc=(char*)realloc(ptr_calloc,4*sizeof(char));
+ free(ptr_malloc);
+   free(ptr_realloc);
+   ptr_malloc=NULL;
+   ptr_calloc=NULL;
+   ptr_realloc=NULL;
+   printf("after freeing memory %p\n",ptr_malloc);
+    return 0;
+}

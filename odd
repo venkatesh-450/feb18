@@ -1,0 +1,22 @@
+
+#include <stdio.h>
+
+void main()
+{
+    int arr[]={12,13,15,20,16};
+    int i;
+    int n=sizeof (arr)/sizeof (arr[0]);
+    printf("size of n %d\n",n);
+    for(i=0;i<5;i++)
+    {
+    if(arr[i]%2==0)
+    {
+    printf("even number value is %d postition is %d\n",arr[i],i);
+    }
+    else(arr[i]%2!=0);
+    
+        printf("odd number value is %d and position is %d\n",arr[i],i);
+    
+    }
+
+}
